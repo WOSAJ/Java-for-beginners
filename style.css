@@ -1,0 +1,123 @@
+/* Common */
+:root {
+    --main_gradient: linear-gradient(to right, #f28, #40f);
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background: var(--main_gradient);
+    color:white;
+}
+
+header a {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 40px;
+}
+
+/* Code blocks */
+div.code { 
+    background: var(--main_gradient);
+    padding-top: 10px;
+    width: max-content;
+    border-top-right-radius: 30px;
+    padding-bottom: 1px;
+
+    --textcolor: #ddd;
+    --bgcolor: #555;
+}
+
+div.code ol {
+    background-color: #444;
+    color: var(--textcolor);
+    width: max-content;
+}
+
+div.code ol li::marker {
+    color: #999;
+}
+
+div.code ol li:first-child {
+    padding-top: 5px;
+}
+
+div.code ol li:last-child {
+    padding-bottom: 10px;
+}
+
+div.code ol li:nth-child(odd) {
+    background-color: var(--bgcolor);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.code ol li:nth-child(even) {
+    background-color: var(--bgcolor);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div.code pre {
+    display: inline;
+}
+
+div.code h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    color: white;
+    font-size: larger;
+} 
+
+div.code textarea {
+    display: none;
+}
+
+/* #region Code highligting */
+/* #region Common */
+div.code span.comment {
+    color:gray;
+}
+
+div.code span.nolight span {
+    color: var(--textcolor);
+}
+
+div.code span.comment span {
+    color: gray;
+}
+/*#endregion*/ 
+/* #region Java */
+span.javaword {
+    color: orange;
+}
+
+span.javafield {
+    color: #936f94;
+}
+
+span.javastring {
+    color: #6a6;
+}
+
+span.javanumber {
+    color: #99c;
+}
+
+span.javaannotation {
+    color: yellow;
+}
+
+span.javamethod {
+    color: lightsalmon;
+}
+/*#endregion*/ 
+/*#endregion*/

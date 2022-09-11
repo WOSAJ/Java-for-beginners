@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <title>Учебник по Java</title>
+</head>
+<body>
+    <main>
+        <code>
+package com.wosaj.zenbot;
+
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
+
+public final class Main {
+    private static JDA jda;
+    private static CommandManager manager = new CommandManager();
+    public static void main(String[] args) throws Exception {
+        String s = "";
+        jda = JDABuilder.createDefault(System.getenv("TOKEN")).build().awaitReady();
+        jda.addEventListener(manager);
+    }
+
+    public static JDA getJda() {
+        return jda;
+    }
+
+    public static CommandManager getManager() {
+        return manager;
+    }
+}
+        </code>
+    </main>
+</body>
+<script src="./code_generator.js"></script>
+</html>

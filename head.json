@@ -1,0 +1,18 @@
+[
+    {
+        "tag": "header",
+        "target": "body",
+        "position": "first",
+        "content": "<h2>Учебник по Java</h2>\n<a href=\"https://github.com/wosaj\"><i class='bx bxl-github'></i></a>"
+    },
+    {
+        "tag": "link",
+        "target": "head",
+        "position": "last",
+        "attributes": {
+            "rel": "icon",
+            "type": "image/vnd.microsoft.icon",
+            "href": "/favicon.ico"
+        }
+    }
+] 
